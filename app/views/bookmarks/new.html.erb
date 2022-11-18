@@ -1,8 +1,8 @@
 <div>
   <%= simple_form_for([@list, @bookmark]) do |f| %>
     <%= f.input :comment %>
-    <%# <%= f.input :movie %>
+    <%= f.association :movie %>
     <%= f.submit %>
   <% end %>
 </div>
-<%= link_to "Back to the list", lists_path(@lists) %>
+<%= link_to "Back to the list", list_path(@lists) %>
