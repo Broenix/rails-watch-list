@@ -4,6 +4,7 @@
 <br>
 <ul>
   <% @lists.each do |list| %>
+      <li><%= list.photo %>
       <li><%= link_to list.name, list_path(list) %></li>
   <% end %>
 
